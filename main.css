@@ -1,0 +1,37 @@
+
+    h1 {
+      color: rgba(155, 4, 4, 0.788);
+      font-size: medium;
+    }
+
+    h2 {
+      color: rgba(155, 4, 4, 0.788);
+      font-size: 40px ;
+    }
+
+    h3 {
+      color: rgba(155, 4, 4, 0.788);
+      font-size: larger;
+    }
+
+    h4 {
+      color: rgba(155, 4, 4, 0.788);
+      font-size: medium;
+    }
+
+    p {
+      border: 5px solid rgb(189, 170, 120);
+      font-size: 15px;
+    }
+
+    .newSection {
+      background-color: rgb(189, 170, 120);
+      color: rgba(155, 4, 4, 0.788);
+      padding: 8px;
+    }
+
+    #section-contents {
+      float: left;
+      width: 30%;
+      margin-right: 10px;
+    }
