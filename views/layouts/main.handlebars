@@ -3,6 +3,21 @@
 <head>
   <link rel="stylesheet" href="./main.css">
   <title>TimeZone Conversion</title>
+  <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".default_option").click(function(){
+        $(this).parent().toggleClass("active");
+      })
+      $(".select_ul li").click(function(){
+        currentele = $(this).html();
+        $(".default_option li").html(currentele)
+        $(this).parents(".select_wrap").removeClass("active");
+      })
+
+    });
+  </script>
 
 </head>
 <body>
@@ -48,22 +63,99 @@
     <img src="https://www.thetimezoneconverter.com/img/tips/interface0.png" height="300" width="800">
   </p>
   <div class = "wrapper">
-    <div class = "search_box">
-      <div class = "dropdown">
-        <div class= "default_option">All</div>>
-        <ul>
-          <li>All</li>
-          <li>Recent</li>
-          <li>Popular</li>
+    <div class = "title">
+      Custom Select Box
+      </div>
+      <div class = "select_wrap">
+        <ul class="default_option">
+          <li>
+            <div class = "option General Message">
+              <div class="icon"></div>
+              <p>Select City</p>
+            </div>
+          </li>
+        </ul>
+        <ul class="select_ul">
+          <li>
+            <div class = "option Honolulu">
+              <div class="icon"></div>
+              <p>Honolulu,Hawaii</p>
+            </div>
+          </li>
+          <li>
+            <div class = "option Anchorage">
+              <div class="icon"></div>
+              <p>Anchorage,Al</p>
+            </div>
+          </li>
+          <li>
+            <div class = "option Juneau">
+              <div class="icon"></div>
+              <p>Juneau,Al</p>
+            </div>
+          </li>
+          <li>
+            <div class = "option Los Angeles">
+              <div class="icon"></div>
+              <p>Los Angeles,CA </p>
+            </div>
+          </li>
+          <li>
+            <div class = "option San Francisco">
+              <div class="icon"></div>
+              <p>San Francisco,CA </p>
+            </div>
+          </li>
+          <li>
+            <div class = "option Portland">
+              <div class="icon"></div>
+              <p>Portland,Or</p>
+            </div>
+          </li>
+          <li>
+            <div class = "option Seattle">
+              <div class="icon"></div>
+              <p>Seattle, WA</p>
+            </div>
+          </li>
+          <li>
+            <div class = "option Denver">
+              <div class="icon"></div>
+              <p>Denver,CO</p>
+            </div>
+          </li>
+          <li>
+            <div class = "option Phoenix">
+              <div class="icon"></div>
+              <p>Phoenix,AZ</p>
+            </div>
+          </li>
+          <li>
+            <div class = "option Chicago">
+              <div class="icon"></div>
+              <p>Chicago,IL</p>
+            </div>
+          </li>
+          <li>
+            <div class = "option Dallas">
+              <div class="icon"></div>
+              <p>Dallas,TX</p>
+            </div>
+          </li>
+          <li>
+            <div class = "option Atlanta">
+              <div class="icon"></div>
+              <p>Atlanta,GA</p>
+            </div>
+          </li>
+          <li>
+            <div class = "option New York">
+              <div class="icon"></div>
+              <p>New York City, NY</p>
+            </div>
+          </li>
         </ul>
       </div>
-      <div class = "search_field">
-        <input type="text" class="input" placeholder = "Search">
-        <i class="fas fa-search"></i>
-      </div>
-
-    </div>
-  </div>
 
 </body>
 <a href="#section-contents">Back to CONTENTS</a>
